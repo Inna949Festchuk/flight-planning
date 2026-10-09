@@ -1,0 +1,13 @@
+[
+  {"uav_model": "Genimi", "type": "visible", "name": "Geoscan PF1B", "ly_mm": 23.5, "lx_mm": 15.6, "f_mm": 20, "ny_px": 6000, "nx_px": 4000, "r_um": 3.9},
+  {"uav_model": "Genimi", "type": "multispectral", "name": "Geoscan Pollux", "ly_mm": 4.968, "lx_mm": 3.726, "f_mm": 8, "ny_px": 1440, "nx_px": 1080, "r_um": 3.45},
+  {"uav_model": "Геоскан 201", "type": "visible", "name": "Riebo R4", "ly_mm": 36, "lx_mm": 24, "f_mm": 40, "ny_px": 8192, "nx_px": 5464, "r_um": 4.4},
+  {"uav_model": "Геоскан 201", "type": "visible", "name": "Riebo R6", "ly_mm": 35.7, "lx_mm": 23.8, "f_mm": 18, "ny_px": 9504, "nx_px": 6336, "r_um": 3.76},
+  {"uav_model": "Геоскан 201", "type": "visible", "name": "DSC-RX1RM2", "ly_mm": 35.9, "lx_mm": 24, "f_mm": 35, "ny_px": 7978, "nx_px": 5333, "r_um": 4.5},
+  {"uav_model": "Геоскан 201", "type": "visible", "name": "DSC-RX1RM3", "ly_mm": 35.9, "lx_mm": 24, "f_mm": 35, "ny_px": 9548, "nx_px": 6383, "r_um": 3.76},
+  {"uav_model": "Геоскан 201", "type": "visible", "name": "Sony ZV-E10", "ly_mm": 23.5, "lx_mm": 15.6, "f_mm": 16, "ny_px": 6000, "nx_px": 4000, "r_um": 3.92},
+  {"uav_model": "Геоскан 201", "type": "multispectral", "name": "Geoscan Pollux", "ly_mm": 4.968, "lx_mm": 3.726, "f_mm": 8, "ny_px": 1440, "nx_px": 1080, "r_um": 3.45},
+  {"uav_model": "Геоскан 801", "type": "visible", "name": "Узкоугольная", "ly_mm": 6.17, "lx_mm": 4.55, "f_mm": 16, "ny_px": 4000, "nx_px": 3000, "r_um": 1.54},
+  {"uav_model": "Геоскан 801", "type": "visible", "name": "Широкоугольная", "ly_mm": 6.17, "lx_mm": 4.55, "f_mm": 4.35, "ny_px": 4000, "nx_px": 3000, "r_um": 1.54},
+  {"uav_model": "Геоскан 801", "type": "thermal", "name": "Тепловизор", "ly_mm": 7.68, "lx_mm": 6.14, "f_mm": 9.1, "ny_px": 640, "nx_px": 512, "r_um": 12}
+]

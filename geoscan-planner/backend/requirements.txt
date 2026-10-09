@@ -1,0 +1,16 @@
+Django==5.1.4
+djangorestframework==3.15.2
+djangorestframework-gis==1.0
+djangorestframework-simplejwt==5.3.1
+drf-spectacular==0.27.2
+django-cors-headers==4.4.0
+psycopg2-binary==2.9.9
+celery==5.4.0
+redis==5.0.8
+pulp==2.8.0
+shapely==2.0.6
+numpy==2.1.3
+openai==1.65.2
+httpx==0.28.1
+python-dotenv==1.0.1
+gunicorn==22.0.0

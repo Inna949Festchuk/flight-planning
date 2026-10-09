@@ -1,0 +1,8 @@
+[
+  {"id": 1, "name": "Genimi-1", "model": "Genimi", "time_fly_min": 40, "speed_kmh": 40.5, "battery_pct": 88, "max_wind_kmh": 10, "payloads": ["Видимый диапазон", "Мультиспектр"]},
+  {"id": 2, "name": "Genimi-2", "model": "Genimi", "time_fly_min": 40, "speed_kmh": 40.5, "battery_pct": 72, "max_wind_kmh": 10, "payloads": ["Видимый диапазон", "Мультиспектр"]},
+  {"id": 3, "name": "Геоскан 801-1", "model": "Геоскан 801", "time_fly_min": 40, "speed_kmh": 40.5, "battery_pct": 84, "max_wind_kmh": 8, "payloads": ["Видимый диапазон", "Тепловизор"]},
+  {"id": 4, "name": "Геоскан 801-2", "model": "Геоскан 801", "time_fly_min": 40, "speed_kmh": 40.5, "battery_pct": 64, "max_wind_kmh": 8, "payloads": ["Видимый диапазон", "Тепловизор"]},
+  {"id": 5, "name": "Геоскан 201-1", "model": "Геоскан 201", "time_fly_min": 180, "speed_kmh": 97, "battery_pct": 95, "max_wind_kmh": 15, "payloads": ["Видимый диапазон", "Мультиспектр"]},
+  {"id": 6, "name": "Геоскан 201-2", "model": "Геоскан 201", "time_fly_min": 180, "speed_kmh": 97, "battery_pct": 80, "max_wind_kmh": 15, "payloads": ["Видимый диапазон", "Мультиспектр"]}
+]

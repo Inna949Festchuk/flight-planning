@@ -1,0 +1,5 @@
+[
+  {"model": "Genimi", "time_fly_min": 40, "speed_kmh": 40.5, "note": "средняя скорость 75% (ТТХ_БВС.xlsx)"},
+  {"model": "Геоскан 801", "time_fly_min": 40, "speed_kmh": 40.5, "note": "средняя скорость 75% (ТТХ_БВС.xlsx)"},
+  {"model": "Геоскан 201", "time_fly_min": 180, "speed_kmh": 97, "note": "средняя скорость 75% (ТТХ_БВС.xlsx)"}
+]

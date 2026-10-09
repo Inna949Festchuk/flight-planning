@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+
+sourcecraft
+ui_images
+
+strela-prototype.zip
+strela-prototype/node_modules
+
+MERGE.md
