@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Планировщик съёмки</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v9.2.4/ol.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="map-wrap">
+    <div id="map"></div>
+    <p id="map-extent" class="map-extent">100 км²</p>
+  </div>
+  <aside>
+    <h1>Распределение съёмки</h1>
+    <p class="hint">
+      На каждой ВПП стоит свой парк. Точка ВПП — и старт, и посадка: борт возвращается только на свою площадку.
+      Камера борта подбирается под тип района. Перекрытие 50%.
+    </p>
+    <p class="hint">ВПП и районы задаются только загрузкой файла. Щелчок по карте ничего не ставит. Разрешение вводится в метрах на пиксель.</p>
+    <p id="status" class="status">ВПП 0/6. Районов пока нет.</p>
+
+    <label for="resolution">Разрешение, м/пиксель</label>
+    <input id="resolution" type="number" min="0.001" step="0.001" value="0.05" inputmode="decimal">
+
+    <button type="button" id="solve" class="primary" disabled>Рассчитать</button>
+    <p id="form-error" class="error"></p>
+
+    <p class="hint">Координаты в WGS84. Загрузка читает GeoJSON и KML: файл ВПП заменяет площадки, файл полигонов заменяет районы и запретные зоны.</p>
+    <div class="row" id="export">
+      <button type="button" id="load-vpp-button">Загрузить ВПП</button>
+      <button type="button" id="load-poly-button">Загрузить районы</button>
+      <input id="load-vpp" type="file" accept=".geojson,.json,.kml" hidden>
+      <input id="load-poly" type="file" accept=".geojson,.json,.kml" hidden>
+      <button type="button" id="export-vpp-geojson" disabled>ВПП GeoJSON</button>
+      <button type="button" id="export-vpp-kml" disabled>ВПП KML</button>
+      <button type="button" id="export-poly-geojson" disabled>Полигоны GeoJSON</button>
+      <button type="button" id="export-poly-kml" disabled>Полигоны KML</button>
+    </div>
+  </aside>
+  <section id="results">
+    <div id="criteria" class="criteria" hidden>
+      <button type="button" data-mode="time">Минимальное время</button>
+      <button type="button" data-mode="resource">Минимальный ресурс</button>
+      <button type="button" data-mode="balanced">Время и ресурс</button>
+    </div>
+    <div id="legend" class="legend"></div>
+    <div id="table-wrap"></div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/ol@v9.2.4/dist/ol.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

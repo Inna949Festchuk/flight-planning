@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ВПП-1",
+        "vpp": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.855586,
+          56.511863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ВПП-2",
+        "vpp": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9351,
+          56.521145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ВПП-3",
+        "vpp": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.981798,
+          56.502115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ВПП-4",
+        "vpp": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.992456,
+          56.476804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ВПП-5",
+        "vpp": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.938045,
+          56.46054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ВПП-6",
+        "vpp": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.858952,
+          56.470918
+        ]
+      }
+    }
+  ]
+}
