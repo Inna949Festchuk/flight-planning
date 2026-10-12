@@ -1,0 +1,288 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  grid-template-rows: minmax(280px, 1fr) auto;
+  color: #1c1c1c;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#map-wrap {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  min-width: 0;
+  min-height: 280px;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border: 2px solid #204070;
+}
+
+.map-extent {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 2;
+  margin: 0;
+  padding: 4px 8px;
+  color: #1c1c1c;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #204070;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.ol-viewport.is-panning,
+.ol-viewport.is-panning * {
+  cursor: grabbing !important;
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  box-sizing: border-box;
+  padding: 16px 18px 28px;
+  overflow: auto;
+  background: #f7f7f7;
+  border-left: 1px solid #ddd;
+}
+
+.criteria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 8px;
+}
+
+#table-wrap section.active {
+  margin: 0 -6px;
+  padding: 4px 6px 8px;
+  background: #f4f7fb;
+  outline: 1px solid #204070;
+}
+
+#results {
+  grid-column: 1;
+  grid-row: 2;
+  max-height: 280px;
+  box-sizing: border-box;
+  padding: 10px 14px 16px;
+  overflow: auto;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hint,
+.status {
+  margin: 8px 0;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  padding: 6px 10px;
+  color: #1c1c1c;
+  background: #fff;
+  border: 1px solid #c5c5c5;
+  cursor: pointer;
+}
+
+button.active {
+  background: #e7eef8;
+  border-color: #204070;
+}
+
+button.primary {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  color: #fff;
+  background: #204070;
+  border-color: #204070;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+label.inline {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 0;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 8px;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+.error {
+  min-height: 1.2em;
+  color: #a12626;
+  font-size: 13px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th,
+td {
+  padding: 4px 6px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0 0 8px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.legend .key {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.legend .pad {
+  color: #666;
+}
+
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 1px;
+}
+
+.swatch.dash {
+  background: none;
+  border-top: 2px dashed #9a9a9a;
+  height: 0;
+}
+
+.swatch.route {
+  background: none;
+  border-top: 2px dashed #204070;
+  height: 0;
+}
+
+.swatch.transfer {
+  background: none;
+  border-top: 2px dotted #204070;
+  height: 0;
+}
+
+.swatch.square {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+ul.plan {
+  margin: 6px 0 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.plan li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+h2 {
+  margin: 14px 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.summary {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.card {
+  margin: 10px 0;
+  padding: 8px 10px;
+  background: #f7f7f7;
+  border-left: 4px solid #204070;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.card ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.card li {
+  margin: 3px 0;
+}
+
+.card .total {
+  margin: 6px 0 0;
+}
+
+.journal p {
+  margin: 4px 0;
+  font-size: 13px;
+  line-height: 1.4;
+}

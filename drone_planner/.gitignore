@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Результаты расчёта
+assignment.json
+paths.png
+
+# Служебные
+.DS_Store
+Thumbs.db
+*.log

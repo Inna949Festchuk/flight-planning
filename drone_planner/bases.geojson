@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "База Запад"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.505, 55.695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "База Центр"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.550, 55.695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "База Восток"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.585, 55.695]
+      }
+    }
+  ]
+}
